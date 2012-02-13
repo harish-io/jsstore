@@ -1,0 +1,59 @@
+@charset "UTF-8";
+/* CSS Document */
+.phone
+{
+	position:absolute;
+	width:150px;
+	height:110px;
+	background-color:#FFF;
+	font-family:Verdana, Geneva, sans-serif;
+	overflow:hidden;
+}
+#phoneimage
+{
+	position:absolute;
+	left:10px;
+	right:10px;
+	top:30px;
+	width:40px;
+	height:80px;
+}
+#header
+{
+	position:absolute;
+	top:2px;
+	left:10px;
+	font-size:10px;
+	font-weight:bold;
+}
+#subheader
+{
+	position:absolute;
+	top:20px;
+	left:55px;
+	float:right;
+	font-size:10px;
+	font-weight:bold;
+}
+.footer
+{
+	position:absolute;
+	top:70px;
+	left:55px;
+	float:right;
+	font-size:10px;
+}
+.detail
+{
+	position:absolute;
+	left:10px;
+	top:120px;
+	float:right;
+	font-size:10px;
+}
+div.phone:hover
+{
+	-moz-box-shadow: 0 0 5px rgba(0,0,0,0.5);
+	-webkit-box-shadow: 0 0 5px rgba(0,0,0,0.5);
+	box-shadow: 0 0 5px rgba(0,0,0,0.5);
+}

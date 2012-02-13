@@ -1,0 +1,97 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>HTML5 Store</title>
+<link href="style.css" rel="stylesheet" type="text/css" />
+<link href="phone.css" rel="stylesheet" type="text/css" />
+<link href="jquery-ui-1.8.17.custom.css" rel="stylesheet" type="text/css" />
+<script src="jquery.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.js"></script>
+<script src="JSTween.js"></script>
+<script src="JSParallel.js"></script>
+<script src="JQOpacityTween.js"></script>
+<script src="main.js"></script>
+</head>
+
+<body>
+<div id="container">
+	<div id="topheader" class="topHeaderBar">
+    	<img src="pics/logo_orange.png"/>
+    </div>
+    <div id="encompass" class="encompassContainer">
+    
+    </div>
+
+	<div id="header2" class="headerBar">
+    	<h3 class="small">Browse<span style="float:right"><a href="#" onClick="moveRight()">Find Phones</a> |<a href="#" onClick="moveLeft()"> View Cart</a></span></h3>
+    </div>
+    <div id="menu" class="menuHolder">
+				<h3 id="black" class="boldHeader">Find</h3>
+                <input type="text" id="searchBox" />
+                                     <h3 id="filterheader" class="boldHeader">Fliter</h3>
+                <h3 id="filterHeading">Series</h3>
+                <h3 id="nofiltered">(18 items selected)</h3>
+
+				<!--<input type="range" min="0" max="6" id="slider" value="0"/>-->
+               <!-- <input type="checkbox" id="cb1"/>-->
+               <div id="mainselection">
+                     <select id="selbox" onchange="doSelection()">
+                   		  <option>All</option>
+                    	  <option>2000</option>
+                          <option>3000</option>
+                          <option>4000</option>
+                          <option>5000</option>
+
+                     </select>
+				</div>
+                <h3 id="priceHeading">Price</h3>
+                <h3 id="priceLow">$0</h3>
+                <h3 id="priceHigh">$1100</h3>
+
+
+               <div id="sliderdiv">
+                 <div id="slider"></div>
+                </div>
+                <div id="hrule1" class="hrule"></div>
+
+				<h3 id="reqHeading">Required Features</h3>
+
+                <input type="checkbox" class="cb" id="cb2" onchange="onTribandChange()">
+                <h3 id="tribandcblabel" class="cblabel">Tri Band</h3>
+                <input type="checkbox" class="cb" id="cb3">
+                 <h3 id="cameracblabel" class="cblabel">Camera</h3>
+                 <div id="hrule2" class="hrule"></div>
+                 <h3 id="compare" class="boldHeader">Compare Phones</h3>
+
+	</div>
+    <p id="shoppingCartTitle">Your Shopping Cart</p>
+    <div id="cart" class="cartHolder">
+    
+    </div>
+     <div id="comparer" class="compareHolder">
+    
+    </div>
+    <div id="compareButton" class="gradientButton" onclick="doCompare()"><h3 id="compareLabel">Compare Items</h3></div>
+    <div id="holder">
+	</div>
+    <div id="leftgrip" class="grip">
+    </div>
+    <div id="rightgrip" class="grip">
+    </div>
+    <div id="cartButton" onclick="moveLeft()">
+    	<img src="pics/icon_cart_empty.png"/>
+    </div>
+     <div id="searchButton" onclick="moveRight()">
+    	   <img src="pics/icon_magnifier.png"/>
+    </div>
+
+
+	
+</div>
+
+
+
+
+</body>
+</html>

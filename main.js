@@ -1,5 +1,5 @@
 // JavaScript Document
-var str = "<div id='!ID!' class='phone'><p id='header'>Nokia !PHONENO! Phone</p><p id='subheader'>Tri Band</p><p class='footer'>$339.00</p><img id='phoneimage' src='pics/!PIC!.gif' /><div class='tileMenuHolder'><div class='smallButton' id='!CARTID!'><img src='pics/icon_cart_empty.png' class='tileMenuCart'/></div><div class='smallButton' id='!COMPAREID!'><img src='pics/icon_compare.png' class='tileMenuCompare'/></div><div class='smallButton' id='!DETAILID'><img src='pics/icon_details.png' class='tileMenuDetails'/></div></div><p class='detail' id='details' style:'display:'none''>Loern ipsum Loern ipsum ki maa bhenLoern ipsum ki maa bhenLoern ipsum ki maa bhenLoern ipsum ki maa bhen</p></div></div>";
+var str = "<div id='!ID!' class='phone'><p id='header'>Nokia !PHONENO! Phone</p><p id='subheader'>Tri Band</p><p class='footer'>$339.00</p><img id='phoneimage' src='pics/!PIC!.gif' /><div class='tileMenuHolder'><div class='smallButton' id='!CARTID!'><img src='pics/icon_cart_empty.png' class='tileMenuCart'/></div><div class='smallButton' id='!COMPAREID!'><img src='pics/icon_compare.png' class='tileMenuCompare'/></div><div class='smallButton' id='!DETAILID'><img src='pics/icon_details.png' class='tileMenuDetails'/></div></div><p class='detail' id='details' style:'display:'none''>Loern ipsum Loern ipsum ki Loern ipsum ki Loern ipsum Loern ipsum</p></div></div>";
 $(document).ready(function(e) 
 {
 	$('#slider').slider({
@@ -50,7 +50,6 @@ function acceptDragDrop()
 }
 function addCartItem(id)
 {
-	console.log("incoming id"+id);
 	var item = parseInt(id)+1;
 	var pic = "p"+parseInt(item);
 	var title = "Nokia d"+(item-1)+" Phone";
@@ -76,7 +75,6 @@ function addCompareItem(id)
 	{
 		
 		
-		console.log("incoming id"+id);
 		var item = parseInt(id)+1;
 		compareItemList.push(parseInt(id));
 		var pic = "p"+parseInt(item);
@@ -107,10 +105,8 @@ function onDeleteFromCart(event)
 }
 function onDeleteFromCompare(event)
 {
-	console.log("To delete "+event.currentTarget.id);
 	var id = event.currentTarget.id.split("compdel")[1];
 	var divid = "#co"+id;
-	console.log(divid);
 	$(divid).remove();
 	for(var i=0; i<compareItemList.length; i++)
 	{
